@@ -1,0 +1,19 @@
+<div class="blog-posts">
+  {{#each blogPosts}}
+    <div class="card mb-3">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-8">
+            <h5>{{title}}</h5>
+          </div>
+          <div class="col-4 text-right">
+            <p>Posted by {{User.username}} on {{formatDate dateCreated}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>{{text}}</p>
+      </div>
+    </div>
+  {{/each}}
+</div>

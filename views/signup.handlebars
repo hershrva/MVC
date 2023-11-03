@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Your head content here -->
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form class="signup-form" action="/signup" method="POST">
+      <div class="form-group">
+        <label for="name-signup">Name:</label>
+        <input type="text" id="name-signup" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email-signup">Email:</label>
+        <input type="email" id="email-signup" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password-signup">Password:</label>
+        <input type="password" id="password-signup" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </form>
+    <p>Already have an account? <a href="/login">Login</a></p>
+  </div>
+</body>
+</html>
